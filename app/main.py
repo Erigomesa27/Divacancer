@@ -16,7 +16,7 @@ def get_clean_data():
 
 
 def add_sidebar():
-  st.sidebar.header("Cell Nuclei Measurements")
+  st.sidebar.header("Cell Untuk Cek Diagnosis")
   
   data = get_clean_data()
   
@@ -160,7 +160,7 @@ def add_predictions(input_data):
   st.write("Probability of being benign: ", model.predict_proba(input_array_scaled)[0][0])
   st.write("Probability of being malicious: ", model.predict_proba(input_array_scaled)[0][1])
   
-  st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
+  st.write("Aplikasi ini dapat membantu EMS dalam membuat diagnosis, tetapi tidak boleh digunakan sebagai pengganti diagnosis EMS secara real.")
 
 
 
