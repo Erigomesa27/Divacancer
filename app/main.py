@@ -148,8 +148,8 @@ def add_predictions(input_data):
   
   prediction = model.predict(input_array_scaled)
   
-  st.subheader("Cell cluster prediction")
-  st.write("The cell cluster is:")
+  st.subheader("Prediksi")
+  st.write("Jawaban : ")
   
   if prediction[0] == 0:
     st.write("<span class='diagnosis benign'>Benign</span>", unsafe_allow_html=True)
